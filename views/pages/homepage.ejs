@@ -1,0 +1,19 @@
+<%- include("../partials/header", {}) %>  
+
+<div> 
+    <%= user.name %>
+
+<img class="imguser" src="<%=user.avatarUrl %>">
+</div>
+
+
+<div> 
+  <a href="/user/<%=friends[0].id %>"> <img class="imguser" src="<%=friends[0].avatarUrl %>"> </a> 
+  <a href="/user/<%=friends[1].id %>"> <img class="imguser" src="<%=friends[1].avatarUrl %>"> </a> 
+  <a href="/user/<%=friends[2].id %>"> <img class="imguser" src="<%=friends[2].avatarUrl %>"> </a> 
+</div>
+
+
+
+<%- include("../partials/footer",{}) %> 
+
